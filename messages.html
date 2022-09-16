@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="#">
+	<title>Oppium - Messages</title>
+	<link rel="stylesheet" href="css/jQuery-ui.css">
+<link rel="stylesheet" href="css/fancy.css">
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/kalendae.css">
+<link rel="stylesheet" href="css/plyr.css">
+<link rel="stylesheet" href="css/icons-font.css">
+<link rel="stylesheet" href="css/timepicker.css">
+<link rel="stylesheet" href="css/simditor.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="body">
+	<div class="wrapper">
+		<!-- Header -->
+		<header class="header">
+	<div class="container container--wide">
+		<div class="header__inner df">
+			<a class="header__logo" href="index.html">
+				<img src="../img/logo-dark.svg" alt="Oppium">
+			</a>
+			<nav class="header__nav">
+				<ul class="df">
+					<li><a href="#">Find Work</a></li>
+					<li><a href="#">Hire Desigeners</a></li>
+					<li><a href="#">Find Propositions</a></li>
+				</ul>
+			</nav>
+			<div class="header__search global-search">
+	<form class="df" action="#">
+		<input type="text" placeholder="Search">
+		<select class="custom-select">
+			<option value="Jobs">Jobs</option>
+			<option value="Option 1">Option 1</option>
+			<option value="Option 2">Option 2</option>
+			<option value="Option 3">Option 3</option>
+			<option value="Option 4">Option 4</option>
+		</select>
+		<input type="submit" value="">
+	</form>
+</div>
+			<div class="header__actions df">
+				<a href="#">
+					<i class="i-notification"></i>
+				</a>
+				<a href="#">
+					<i class="i-envelope"></i>
+				</a>
+				<a href="#">
+					<i class="i-heart"></i>
+				</a>
+			</div>
+
+			<div class="header__sign">
+				<a class="modal-btn" href="#" data-id="sign-in">Sign In</a>
+			</div>
+			<div class="header__join">
+				<a class="modal-btn" href="#" data-id="sign-up">
+					Join
+				</a>
+			</div>
+			<!-- <div class="header__user">
+				<a class="header__user-btn popup-button" href="#">
+					<img src="../img/users/user.webp" alt="User">
+				</a>
+				<div class="popup-global popup-triangle">
+					<ul class="header__user-menu">
+						<li>
+							<a href="#">
+								<i class="i-profile"></i>
+								<span>Profile</span>
+							</a>
+						</li>
+						<li> <a href="#">
+								<i class="i-dashboard"></i>
+								<span>Dashboard</span>
+							</a></li>
+						<li> <a href="#">
+								<i class="i-settings"></i>
+								<span>Settings</span>
+							</a></li>
+						<li> <a href="#">
+								<i class="i-logout"></i>
+								<span>Logout</span>
+							</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__request header__request--purple">
+				<a href="#">
+					Post a Request
+				</a>
+			</div> -->
+		</div>
+	</div>
+</header>
+
+		<!-- Categories -->
+		<div class="categories">
+	<div class="container container--wide">
+		<ul>
+			<li>
+				<a href="#">Graphics &amp; Design </a>
+			</li>
+			<li>
+				<a href="#">Development &amp; IT</a>
+			</li>
+			<li>
+				<a href="#">Sales &amp; Marketing</a>
+			</li>
+			<li>
+				<a href="#">Video &amp; Animation</a>
+			</li>
+			<li>
+				<a href="#">Music &amp; Audio</a>
+			</li>
+			<li>
+				<a href="#">Programming &amp; Tech</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+		<!-- Main -->
+		<main class="main">
+			<div class="messages">
+				<div class="container container--wide">
+					<div class="messages__inner">
+						<div class="messages__conversations">
+							<div class="messages__conversations-top">
+								<select class="custom-select">
+									<option value="1">All Conversations</option>
+									<option value="2">Option 1</option>
+									<option value="3">Option 2</option>
+									<option value="4">Option 3</option>
+								</select>
+								<div class="messages__filter">
+									<input type="text" id="search" autocomplete="off" placeholder="Filter by name">
+									<i class="messages__filter-close i-close"></i>
+								</div>
+								<i class="messages__filter-btn i-search"></i>
+							</div>
+							<ul class="messages__conv custom-scroll">
+								<li class="messages__dialog is-active">
+									<div class="g-user g-user--status is-online">
+										<div class="g-user__avatar">
+											<img src="./img/freelancers/1.webp" alt="Freelancer">
+										</div>
+									</div>
+									<div class="messages__conv-content">
+										<div class="messages__conv-info">
+											<h5 class="g-title">Rojer Smith</h5>
+											<span>2 Days</span>
+										</div>
+										<p class="messages__conv-text">
+											<span>Me:</span>
+											Hi there, do you design on a windows or Mac computer?
+										</p>
+									</div>
+								</li>
+								<li class="messages__dialog">
+									<div class="g-user g-user--status is-offline">
+										<div class="g-user__avatar">
+											<img src="./img/freelancers/2.webp" alt="Freelancer">
+										</div>
+									</div>
+									<div class="messages__conv-content">
+										<div class="messages__conv-info">
+											<h5 class="g-title">Adam Smith</h5>
+											<span>2 Days</span>
+										</div>
+										<p class="messages__conv-text">
+											<span>Me:</span>
+											Hi there, do you design on a windows or Mac computer?
+										</p>
+									</div>
+								</li>
+								<li class="messages__dialog">
+									<div class="g-user g-user--status is-online">
+										<div class="g-user__avatar">
+											<img src="./img/freelancers/3.webp" alt="Freelancer">
+										</div>
+									</div>
+									<div class="messages__conv-content">
+										<div class="messages__conv-info">
+											<h5 class="g-title">Sara Smith</h5>
+											<span>2 Days</span>
+										</div>
+										<p class="messages__conv-text">
+											<span>Me:</span>
+											Hi there, do you design on a windows or Mac computer?
+										</p>
+									</div>
+								</li>
+								<li class="messages__dialog">
+									<div class="g-user g-user--status is-offline">
+										<div class="g-user__avatar">
+											<img src="./img/freelancers/4.webp" alt="Freelancer">
+										</div>
+									</div>
+									<div class="messages__conv-content">
+										<div class="messages__conv-info">
+											<h5 class="g-title">Petra Smith</h5>
+											<span>2 Days</span>
+										</div>
+										<p class="messages__conv-text">
+											<span>Me:</span>
+											Hi there, do you design on a windows or Mac computer?
+										</p>
+									</div>
+								</li>
+								<li class="messages__dialog">
+									<div class="g-user g-user--status is-offline">
+										<div class="g-user__avatar">
+											<img src="./img/freelancers/1.webp" alt="Freelancer">
+										</div>
+									</div>
+									<div class="messages__conv-content">
+										<div class="messages__conv-info">
+											<h5 class="g-title">Potter Smith</h5>
+											<span>2 Days</span>
+										</div>
+										<p class="messages__conv-text">
+											<span>Me:</span>
+											Hi there, do you design on a windows or Mac computer?
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="messages__main">
+							<div class="messages__main-top">
+								<h4 class="g-title">
+									<span class="messages__main-status"></span>
+									Rojer Smith
+								</h4>
+								<p>
+									Last seen: <span>44 minutes</span> ago
+								</p>
+							</div>
+							<div class="messages__chat">
+								<ul class="messages__chat-list">
+									<li class="messages__chat-mes">
+										<div class="messages__chat-avatar">
+											<img src="./img/users/1.webp" alt="User">
+										</div>
+										<div>
+											<div class="messages__chat-info">
+												<h5 class="messages__chat-name g-title">Rojer Smith</h5>
+												<span>03 Sep. 5:09</span>
+											</div>
+											<p class="messages__chat-text">
+												Hi there, do you design on a windows or Mac computer?
+											</p>
+										</div>
+									</li>
+									<li class="messages__chat-mes">
+										<div class="messages__chat-avatar">
+											<img src="./img/users/2.webp" alt="User">
+										</div>
+										<div>
+											<div class="messages__chat-info">
+												<h5 class="g-title">Me</h5>
+												<span>03 Sep. 5:09</span>
+											</div>
+											<p class="messages__chat-text">
+												Hi , I design on Mac, but I can also on Windows. Soft work perfect on
+												both systems
+											</p>
+										</div>
+									</li>
+									<li class="messages__chat-mes">
+										<div class="messages__chat-avatar">
+											<img src="./img/users/1.webp" alt="User">
+										</div>
+										<div>
+											<div class="messages__chat-info">
+												<h5 class="messages__chat-name g-title">Rojer Smith</h5>
+												<span>03 Sep. 5:09</span>
+											</div>
+											<p class="messages__chat-text">
+												The purpose of my widget is for searching product specifications and I
+												need a preloader screen - the screen that appears
+												when data is loading
+											</p>
+										</div>
+									</li>
+									<li class="messages__chat-mes">
+										<div class="messages__chat-avatar">
+											<img src="./img/users/2.webp" alt="User">
+										</div>
+										<div>
+											<div class="messages__chat-info">
+												<h5 class="g-title">Me</h5>
+												<span>03 Sep. 5:09</span>
+											</div>
+											<p class="messages__chat-text">
+												Sure, i can make it
+											</p>
+										</div>
+									</li>
+								</ul>
+								<div class="messages__text">
+									<form action="#">
+										<textarea placeholder="Write a Message..."></textarea>
+										<div class="messages__actions">
+											<div class="messages__actions-buttons">
+												<i class="i-smile"></i>
+												<i class="i-file"></i>
+												<i class="i-link"></i>
+											</div>
+											<input type="submit" value="Send">
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="messages__user">
+								<div class="messages__user-top">
+									<div class="g-user g-user--status is-online">
+										<div class="g-user__avatar">
+											<img src="./img/freelancers/1.webp" alt="Freelancer">
+										</div>
+									</div>
+									<div class="messages__user-info">
+										<h4 class="g-title">Rojer Smith</h4>
+										<p class="messages__user-time">9:50 PM GMT+4</p>
+										<p class="messages__user-prof">
+											<i class="i-case"></i>
+											<span>UI/UX Designer</span>
+										</p>
+									</div>
+									<i class="messages__user-close i-close"></i>
+								</div>
+								<ul class="messages__user-description">
+									<li>
+										<span>From:</span>
+										<span>Senegal</span>
+									</li>
+									<li>
+										<span>Oppium since:</span>
+										<span>2022</span>
+									</li>
+									<li>
+										<span>Language:</span>
+										<span>French</span>
+									</li>
+									<li>
+										<span>Rating:</span>
+										<div class="rating">
+											<i class="i-star"></i>
+											<span>5.0</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!--	Footer-->
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__top">
+				<div class="footer__item">
+					<h5 class="footer__item-title">Categories</h5>
+					<ul class="footer__item-list">
+						<li>
+							<a href="#">Graphics &amp; Design</a>
+						</li>
+						<li>
+							<a href="#">Digital Marketing</a>
+						</li>
+						<li>
+							<a href="#">Video &amp; Animation</a>
+						</li>
+						<li>
+							<a href="#">Music &amp; Audio</a>
+						</li>
+						<li>
+							<a href="#">Programming &amp; Tech</a>
+						</li>
+						<li>
+							<a href="#">Business</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h5 class="footer__item-title">Company</h5>
+					<ul class="footer__item-list">
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">Leadership</a>
+						</li>
+						<li>
+							<a href="#">Investor Relations</a>
+						</li>
+						<li>
+							<a href="#">Careers</a>
+						</li>
+						<li>
+							<a href="#">Our Impact</a>
+						</li>
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
+						<li>
+							<a href="#">Terms of Service</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h5 class="footer__item-title">For Talent</h5>
+					<ul class="footer__item-list">
+						<li>
+							<a href="#">How to Find Work</a>
+						</li>
+						<li>
+							<a href="#">Direct Contracts</a>
+						</li>
+						<li>
+							<a href="#">Find Freelance Jobs Worldwide</a>
+						</li>
+						<li>
+							<a href="#">Find Freelance Jobs in the Senegal</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h5 class="footer__item-title">Community</h5>
+					<ul class="footer__item-list">
+						<li>
+							<a href="#">Events</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Forum</a>
+						</li>
+						<li>
+							<a href="#">Community Standards</a>
+						</li>
+						<li>
+							<a href="#">Podcast</a>
+						</li>
+						<li>
+							<a href="#">Affiliates</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<a href="index.html">
+					<img src="../../img/logo-light.svg" alt="Oppium">
+				</a>
+				<p class="footer__rights">
+					&copy; 2022 - 2022 Oppium&reg; Global Inc.
+				</p>
+				<div class="footer__socials">
+					<a href="#"> <i class="i-s-twitter"></i></a>
+					<a href="#"><i class="i-s-facebook"></i></a>
+					<a href="#"><i class="i-s-instagram"></i></a>
+					<a href="#"><i class="i-s-youtube"></i></a>
+					<a href="#"><i class="i-s-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<!-- Overlay -->
+		<div class="overlay"></div>
+
+		<!-- Modal  sign-in-->
+<div class="modal" data-id="#sign-in">
+	<h2 class="modal__title g-title g-title--h2">
+		Sign In To Oppium
+	</h2>
+	<form action="#">
+		<input class="modal__email text-input input-global" type="email" placeholder="Email Address" required="">
+		<span class="password-input__wrap">
+			<input class="modal__password password-input input-global" type="password" placeholder="Password"
+				required="">
+			<span class="password-input__show-btn is-hidden">
+				<i class="password-input__show-icon i-visible"></i>
+				<i class="password-input__show-icon i-not-visible is-hidden"></i>
+			</span>
+		</span>
+		<div class="modal__remember">
+			<label class="check-input">
+				<input class="check-input__check" type="checkbox">
+				<span class="check-input__style"></span>
+				Remember Me
+			</label>
+			<a href="#">Forgot your password?</a>
+		</div>
+		<input class="modal__btn form__button" type="submit" value="Sign In">
+	</form>
+	<span class="modal__or">or continue with</span>
+	<div class="modal__social">
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</div>
+	<div class="modal__bottom">
+		<a class="modal-btn" href="#" data-id="sign-up">Not a member yet? <span>Join now</span></a>
+	</div>
+</div>
+		<!-- Modal  sign-up-->
+<div class="modal" data-id="#sign-up">
+	<h2 class="modal__title g-title g-title--h2">
+		Sign Up To Oppium
+	</h2>
+	<form action="#">
+		<input class="modal__email text-input input-global" type="email" placeholder="Email Address" required="">
+		<span class="password-input__wrap">
+			<input class="modal__password password-input input-global" type="password" placeholder="Password"
+				required="">
+			<span class="password-input__show-btn is-hidden">
+				<i class="password-input__show-icon i-visible"></i>
+				<i class="password-input__show-icon i-not-visible is-hidden"></i>
+			</span>
+		</span>
+		<span class="password-input__wrap">
+			<input class="modal__password password-input input-global" type="password" placeholder="Confirm Password"
+				required="">
+			<span class="password-input__show-btn is-hidden">
+				<i class="password-input__show-icon i-visible"></i>
+				<i class="password-input__show-icon i-not-visible is-hidden"></i>
+			</span>
+		</span>
+		<input class="modal__btn form__button" type="submit" value="Sign Up">
+	</form>
+	<span class="modal__or">or continue with</span>
+	<div class="modal__social">
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</div>
+	<div class="modal__bottom">
+		<a class="modal-btn" href="#" data-id="sign-in">Already a member? <span>Sign In</span></a>
+	</div>
+</div>
+	</div>
+	<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/jQuery-ui.js"></script>
+<script src="js/fancy.js"></script>
+<script src="js/kalendae.standalone.js"></script>
+<script src="js/plyr.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/timepicker.js"></script>
+
+<script src="js/module.js"></script>
+<script src="js/hotkeys.js"></script>
+<script src="js/uploader.js"></script>
+<script src="js/simditor.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
