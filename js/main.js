@@ -163,7 +163,8 @@ $(function () {
 	if ($("#g-slider__row").length) {
 		let swiper3 = new Swiper("#g-slider__row", {
 			// loop: true,
-			freeMode: true,
+			// freeMode: true,
+			speed: 800,
 			slidesPerView: 1,
 			spaceBetween: 30,
 			navigation: {
