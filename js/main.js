@@ -10,12 +10,16 @@ $(function () {
 	}
 
 	// Burger
-	if ($(".burger").length) {
-		let burgerWrap = $(".burger");
+	if (document.querySelector(".burger")) {
+		let burgerWrap = document.querySelector(".burger");
+		let burgerToggle = document.querySelector(".burger__toggle");
+		let menu = document.querySelector(".header__inner-m");
 
-		burgerWrap.on("click", function () {
-			$(".columns__left").slideToggle(200);
-		});
+		burgerWrap.onclick = function () {
+			burgerToggle.classList.toggle("is-active");
+			menu.classList.toggle("is-active");
+			document.body.classList.toggle("is-active");
+		};
 	}
 
 	// Custom select
@@ -132,7 +136,7 @@ $(function () {
 		});
 	}
 
-	// Sliders grid
+	// Marketing strategy slider
 	if ($("#g-slider__grid").length) {
 		let swiper = new Swiper("#g-slider__grid", {
 			// loop: true,
@@ -143,9 +147,15 @@ $(function () {
 				nextEl: ".swiper-button-next1",
 				prevEl: ".swiper-button-prev1",
 			},
+			breakpoints: {
+				1024: {
+					spaceBetween: 15,
+				},
+			},
 		});
 	}
 
+	// Gigs you may like slider
 	if ($("#g-slider__grid2").length) {
 		let swiper2 = new Swiper("#g-slider__grid2", {
 			// loop: true,
@@ -156,10 +166,32 @@ $(function () {
 				nextEl: ".swiper-button-next2",
 				prevEl: ".swiper-button-prev2",
 			},
+			breakpoints: {
+				1024: {
+					spaceBetween: 15,
+				},
+			},
 		});
 	}
 
-	// Sliders row
+	// Freelancer portfolio slider
+	if ($("#g-slider__grid4").length) {
+		let swiper4 = new Swiper("#g-slider__grid4", {
+			slidesPerView: "auto",
+			spaceBetween: 25,
+			navigation: {
+				nextEl: ".swiper-button-next4",
+				prevEl: ".swiper-button-prev4",
+			},
+			breakpoints: {
+				1024: {
+					spaceBetween: 15,
+				},
+			},
+		});
+	}
+
+	// Clients testimonials slider
 	if ($("#g-slider__row").length) {
 		let swiper3 = new Swiper("#g-slider__row", {
 			// loop: true,
@@ -170,6 +202,11 @@ $(function () {
 			navigation: {
 				nextEl: ".swiper-button-next3",
 				prevEl: ".swiper-button-prev3",
+			},
+			breakpoints: {
+				1024: {
+					spaceBetween: 15,
+				},
 			},
 		});
 	}
@@ -183,6 +220,11 @@ $(function () {
 			pagination: {
 				el: ".swiper-pagination",
 				clickable: true,
+			},
+			breakpoints: {
+				1024: {
+					spaceBetween: 15,
+				},
 			},
 		});
 	}
@@ -241,6 +283,7 @@ $(function () {
 		modalBtn.on("click", function (e) {
 			e.preventDefault();
 			let id = $(this).data("id");
+			console.log(id);
 			let thisModal = $('.modal[data-id="#' + id + '"]');
 			modal.fadeOut();
 			thisModal.fadeIn(200);
@@ -321,6 +364,44 @@ $(function () {
 			sidebar.hide();
 		});
 	}
+
+	// Columns filters button
+	if ($(".columns").length) {
+		$(".columns__filters").on("click", function () {
+			console.log("object");
+			$(".filters").fadeToggle(200);
+			$(".overlay").fadeIn(200);
+		});
+
+		$(document).on("click", ".overlay", function () {
+			$(".filters").fadeToggle(200);
+			$(".overlay").fadeOut(200);
+		});
+	}
+
+	// Accordion
+	if ($(".accordion").length) {
+		$(".accordion h5").click(function () {
+			$(".accordion h5").not($(this)).removeClass("is-active");
+			$(this).toggleClass("is-active");
+			$(this).next().slideToggle(300);
+			$(".accordion__item").not($(this).next()).slideUp(300);
+		});
+	}
+
+	// // Proposition message
+	// if ($(".proposition").length) {
+	// 	$(".proposition__aside-contact").on("click", function () {
+	// 		$(".proposition-message").fadeIn(200);
+	// 		$(".overlay").fadeIn(200);
+	// 	});
+
+	// 	$(".proposition-message__close").on("click", function () {
+	// 		console.log("first");
+	// 		$(".proposition-message").fadeOut(200);
+	// 		$(".overlay").fadeOut(200);
+	// 	});
+	// }
 
 	// ------------------------------ //
 
