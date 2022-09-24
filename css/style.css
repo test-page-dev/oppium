@@ -436,9 +436,15 @@ body.is-active {
 }
 .g-prop__img {
   display: flex;
+  max-height: 245px;
+  overflow: hidden;
+  height: 100%;
 }
 .g-prop__img img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .g-prop__user {
   margin-bottom: 15px;
@@ -1729,7 +1735,6 @@ body.is-active {
 }
 .columns__inner--list .g-prop {
   flex-direction: row;
-  align-items: center;
 }
 .columns__inner--list .g-prop__inner {
   height: 100%;
@@ -2631,7 +2636,7 @@ body.is-active {
 }
 .enterprise__list {
   font-size: 17px;
-  line-height: 18px;
+  line-height: 20px;
   margin-bottom: 34px;
 }
 .enterprise__list li + li {
@@ -2745,9 +2750,12 @@ body.is-active {
   top: 16px;
 }
 .offer-details__type, .offer-details__pay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: clamp(20px, 2vw, 27px);
   margin-bottom: 25px;
 }
 .offer-details__tags {
@@ -3091,6 +3099,7 @@ body.is-active {
 }
 .freelancer-p__main-review-top {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 22px;
 }
@@ -3326,7 +3335,7 @@ body.is-active {
   border-top: var(--main-border);
 }
 .proposition__main-reviews-list .g-user {
-  margin-bottom: 24px;
+  margin-bottom: clamp(15px, 2vw, 24px);
 }
 .proposition__main-reviews-list .g-user__avatar {
   width: 50px;

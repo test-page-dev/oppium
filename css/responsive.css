@@ -165,7 +165,7 @@
 @media screen and (max-width: 768px) {
   .intro__inner {
     grid-template: 1fr/1fr;
-    margin-bottom: 50px;
+    margin-bottom: clamp(25px, 4vw, 50px);
   }
   .intro__right {
     display: none;
@@ -293,6 +293,17 @@
   .columns__inner--list div.g-user--freelancer .g-user__cont {
     align-items: center;
   }
+  div.propositions div.columns__inner.columns__inner--list div.g-prop {
+    flex-direction: column;
+  }
+  div.propositions div.columns__inner.columns__inner--list div.g-prop__img {
+    border-radius: 15px 15px 0 0;
+    min-height: clamp(200px, 55vw, 245px);
+  }
+  div.propositions div.columns__inner.columns__inner--list div.g-prop__inner {
+    border-radius: 0 0 15px 15px;
+    border-left: var(--main-border);
+  }
 }
 @media screen and (max-width: 480px) {
   .header__sign {
@@ -368,5 +379,9 @@
   }
   .intro__left h1 span:after {
     display: none;
+  }
+  .intro-a__buttons,
+.intro__buttons {
+    grid-template: 1fr/1fr 1fr;
   }
 }
