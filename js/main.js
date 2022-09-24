@@ -140,7 +140,7 @@ $(function () {
 	if ($("#g-slider__grid").length) {
 		let swiper = new Swiper("#g-slider__grid", {
 			// loop: true,
-			freeMode: true,
+			// freeMode: true,
 			slidesPerView: "auto",
 			spaceBetween: 30,
 			navigation: {
@@ -159,7 +159,7 @@ $(function () {
 	if ($("#g-slider__grid2").length) {
 		let swiper2 = new Swiper("#g-slider__grid2", {
 			// loop: true,
-			freeMode: true,
+			// freeMode: true,
 			slidesPerView: "auto",
 			spaceBetween: 30,
 			navigation: {
